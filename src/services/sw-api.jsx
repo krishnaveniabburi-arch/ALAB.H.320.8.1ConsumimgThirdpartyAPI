@@ -1,9 +1,9 @@
 const BASE_URL = "https://swapi.dev/api";
 
 export async function getAllStarships() {
-  const res = await fetch(`${BASE_URL}/starships/`);
+  const response = await fetch(`${BASE_URL}/starships/`);
 
-  if (!res.ok) {
+  if (!response.ok) {
     throw new Error("Failed to fetch starships");
   }
 
