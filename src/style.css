@@ -7,36 +7,39 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+  min-height: 100vh;
+}
+header {
+    background-color: #0b1514;
+    color:#ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    letter-spacing: 2px;
+    font-size: 1rem;
 }
 
 main {
-  text-align: center;
-  padding: 2rem;
-}
-
-h1 {
-  margin-bottom: 2rem;
-}
-.starship-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-/* grid container */
-.starship-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.starship-card {
+  background-color: #1a3a35;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 45px 20px;
+  text-align:center
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 04px 6px rgba(0, 0, 0, 0.1);
 }
-
-.card {
-  background-color: #fff;
-  border: 2px solid #333;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-.card h2 {
-  font-size: 1.2rem;
+.starship-card h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
 }

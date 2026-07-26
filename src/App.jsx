@@ -17,15 +17,17 @@ import StarshipCard from "./components/StarshipCard";
   }, []);
 
   return (
+    <div>
     <main>
       <h1>Star Wars Starships</h1>
-      {starships.map((starship) => (
+      {starships.map((starship, index) => (
         <StarshipCard
-          key={starship.url}
+          key={index}
           starship={starship}
         />
       ))}
     </main>
+    </div>
   );
 }
 
